@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.headersection {
+    background-color: white;
+    padding: 40px;
+    padding-left: 100px;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 70px 30px;
+}
+
+.navlinks {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('download.jpg') no-repeat center/cover;
+    color: white;
+    
+}
+
+.hero-content {
+   position: relative;
+   left: 100px;
+   top: 40px;
+}
+
+h1 {
+    font-size: 100px;
+    padding-top: 200px;
+}
+
+p {
+    font-size: 30px;
+    padding: 40px 0px;
+}
+
+button {
+    padding: 20px 50px;
+}
+
+
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    .headersection {
+        padding: 30px;
+        padding-left: 50px;
+    }
+
+    .navlinks li {
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        left: 50px;
+        top: 30px;
+    }
+
+    h1 {
+        font-size: 72px;
+        padding-top: 150px;
+    }
+
+    p {
+        font-size: 24px;
+        padding: 30px 0px;
+    }
+
+    button {
+        padding: 18px 40px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 766px) {
+    .headersection {
+        padding: 20px;
+        padding-left: 30px;
+    }
+    @media screen and (max-width: 768px) {
+        .menu-button {
+            display: inline-block;
+        }
+    
+        .navlinks {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    
+        .navlinks.active {
+            display: flex;
+        }
+    
+        .navlinks li {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding: -10px -5px;
+        }
+    }
+    
+/*
+    .navlinks li {
+        padding: 10px 20px;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+*/
+    .hero-content {
+        left: 40px;
+        top: 10px;
+    }
+
+    h1 {
+        font-size: 50px;
+        padding-top: 100px;
+    }
+
+    p {
+        font-size: 10px;
+        padding: 10px 0px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
